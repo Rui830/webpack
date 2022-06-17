@@ -1,0 +1,1 @@
+export const add = () => console.log('add逻辑执行')
