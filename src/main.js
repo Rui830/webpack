@@ -26,8 +26,13 @@ document.body.appendChild(png);
 
 import './assets/fonts/iconfont.css'
 
-class App {
-  static a = 123;
+const fn = () => {
+  console.log('你好');
 }
 
-console.log(App.a);
+import App from './app.vue' // 根vue文件
+import Vue from 'vue' // 引入vue.js对象
+
+new Vue({ 
+  render: h => h(App) // 渲染函数, 渲染App组件里的标签
+}).$mount('#app') // 把vue文件的标签结构 -> 挂载到id为app的标签里
