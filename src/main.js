@@ -29,6 +29,7 @@ import './assets/fonts/iconfont.css'
 const fn = () => {
   console.log('你好');
 }
+fn()
 
 import App from './app.vue' // 根vue文件
 import Vue from 'vue' // 引入vue.js对象
